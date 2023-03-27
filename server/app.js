@@ -251,7 +251,7 @@ var loadUrlTrack = function(req, res, next) {
         req.urlTrack = urlTrack;
         next();
       } else {
-        res.send(404);
+        res.send(401);
       }
     }
   });
