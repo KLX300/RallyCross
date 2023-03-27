@@ -289,7 +289,7 @@ var loadUrlRun = function(req, res, next) {
         req.urlRun = urlRun;
         next();
       } else {
-        res.send(404);
+        res.send(401);
       }
     }
   });
