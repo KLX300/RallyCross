@@ -97,7 +97,7 @@ var authenticationSuccessful = function(req, res) {
   /*
   if (user.newbie) {
     // User has not yet saved their profile.
-    res.redirect('/user/' + user.pub_id + '/edit');
+    //res.redirect('/user/' + user.pub_id + '/edit');
     //res.end();
   } else {
     res.redirect('/');
@@ -233,7 +233,7 @@ var loadUrlUser = function(req, res, next) {
         req.urlUser = urlUser;
         next();
       } else {
-        res.send(404);
+        res.send(401);
       }
     }
   });
